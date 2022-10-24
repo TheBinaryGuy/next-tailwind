@@ -1,0 +1,75 @@
+{
+    "name": "next-tailwind",
+    "version": "1.0.0",
+    "private": true,
+    "license": "MIT",
+    "packageManager": "yarn@3.2.4",
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "postbuild": "cross-env next-sitemap --config next-sitemap.js",
+        "test": "echo 'No tests found.'",
+        "start": "next start",
+        "lint": "next lint",
+        "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+        "prepare": "husky install"
+    },
+    "dependencies": {
+        "@headlessui/react": "^1.7.3",
+        "@tanem/react-nprogress": "^5.0.15",
+        "clsx": "^1.2.1",
+        "framer-motion": "^7.6.1",
+        "next": "12.3.1",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "react-feather": "^2.0.10",
+        "sharp": "^0.31.1",
+        "zustand": "^4.1.2"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.19.6",
+        "@next/env": "^12.3.1",
+        "@tailwindcss/forms": "^0.5.3",
+        "@tailwindcss/line-clamp": "^0.4.2",
+        "@tailwindcss/typography": "^0.5.7",
+        "@types/node": "^18.11.3",
+        "@types/react": "^18.0.21",
+        "@types/react-dom": "^18.0.6",
+        "@types/tailwindcss": "^3.1.0",
+        "@typescript-eslint/eslint-plugin": "^5.40.1",
+        "@typescript-eslint/parser": "^5.40.1",
+        "autoprefixer": "^10.4.12",
+        "cssnano": "^5.1.13",
+        "eslint": "^8.26.0",
+        "eslint-config-airbnb": "^19.0.4",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-config-airbnb-typescript": "^17.0.0",
+        "eslint-config-next": "^12.3.1",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-import-resolver-typescript": "^3.5.2",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-jsx-a11y": "^6.6.1",
+        "eslint-plugin-react": "7.31.10",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "husky": "^8.0.1",
+        "lint-staged": "^13.0.3",
+        "next-sitemap": "^3.1.29",
+        "postcss": "^8.4.18",
+        "prettier": "^2.7.1",
+        "prettier-plugin-tailwindcss": "^0.1.13",
+        "stylelint": "^14.14.0",
+        "stylelint-config-prettier": "^9.0.3",
+        "stylelint-config-recommended": "^9.0.0",
+        "tailwindcss": "^3.2.1",
+        "tailwindcss-debug-screens": "^2.2.1",
+        "typescript": "^4.8.4"
+    },
+    "lint-staged": {
+        "src/**/*.{.js.,ts,.jsx,.tsx}": [
+            "eslint --fix"
+        ],
+        "*.json": [
+            "prettier --write"
+        ]
+    }
+}
