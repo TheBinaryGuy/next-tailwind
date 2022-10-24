@@ -1,4 +1,3 @@
-import routes from '@/utils/routes';
 import Link from 'next/link';
 
 export const Navbar = () => (
@@ -10,9 +9,11 @@ export const Navbar = () => (
             <ul className='flex items-center justify-center gap-4'>
                 <li>
                     <Link
-                        href={routes.client.register}
+                        href='https://github.com/TheBinaryGuy/next-tailwind'
+                        target='_blank'
+                        rel='noreferrer'
                         className='inline-flex min-h-[40px] w-full items-center justify-center rounded bg-indigo-600 px-6 font-medium text-slate-50 transition hover:bg-indigo-700 focus:outline-none focus-visible:outline-indigo-600 active:bg-indigo-500 sm:w-auto'>
-                        Register
+                        Clone This
                     </Link>
                 </li>
             </ul>
