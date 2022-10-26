@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,14 +13,10 @@
     }
 
     body {
-        @apply flex h-full flex-col;
+        @apply flex min-h-full flex-col grow;
 
         @apply bg-slate-50 text-slate-900;
         @apply dark:bg-slate-900 dark:text-slate-50;
-    }
-
-    #__next {
-        @apply font-inter min-h-full flex flex-col grow;
     }
 
     [type='text'],

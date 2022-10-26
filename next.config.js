@@ -12,6 +12,7 @@ module.exports = {
     },
     experimental: {
         newNextLinkBehavior: true,
+        appDir: true,
     },
     reactStrictMode: true,
 };

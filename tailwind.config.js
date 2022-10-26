@@ -4,13 +4,7 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
     content: [require('path').join(__dirname, 'src/**/*.(jsx|tsx)')],
     darkMode: 'class',
-    theme: {
-        extend: {
-            fontFamily: {
-                inter: ['Inter', 'Roboto', ...defaultTheme.fontFamily.sans],
-            },
-        },
-    },
+    theme: {},
     plugins: [
         require('@tailwindcss/typography'),
         require('@tailwindcss/forms'),
