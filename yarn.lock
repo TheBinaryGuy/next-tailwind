@@ -637,10 +637,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^18.11.6":
-  version: 18.11.6
-  resolution: "@types/node@npm:18.11.6"
-  checksum: 25713209b5f8758e782348514e7bd2342bd8edb38038380c66f37b41b12d6840763edb17d81f6451591791c9d59c8255be54591333fc302f473beadada0023e6
+"@types/node@npm:^18.11.8":
+  version: 18.11.8
+  resolution: "@types/node@npm:18.11.8"
+  checksum: 60b358f97c1a029722dc785811b217615ef20249c3fbde60a65869cfd7a5cd5b1872ee95c79c187ef70e5a078f4ac7670d2129803985268b1f021ad6e8040af8
   languageName: node
   linkType: hard
 
@@ -4043,7 +4043,7 @@ __metadata:
     "@tailwindcss/forms": ^0.5.3
     "@tailwindcss/line-clamp": ^0.4.2
     "@tailwindcss/typography": ^0.5.7
-    "@types/node": ^18.11.6
+    "@types/node": ^18.11.8
     "@types/react": ^18.0.23
     "@types/react-dom": ^18.0.7
     "@types/tailwindcss": ^3.1.0
