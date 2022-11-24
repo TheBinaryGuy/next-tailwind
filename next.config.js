@@ -13,6 +13,14 @@ module.exports = {
     experimental: {
         newNextLinkBehavior: true,
         appDir: true,
+        fontLoaders: [
+            {
+                loader: '@next/font/google',
+                options: {
+                    subsets: ['latin'],
+                },
+            },
+        ],
     },
     reactStrictMode: true,
 };
