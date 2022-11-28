@@ -1,4 +1,7 @@
 const colors = require('tailwindcss/colors');
+const {
+    fontFamily: { sans },
+} = require('tailwindcss/defaultTheme');
 const path = require('path');
 
 const brandColor = colors.indigo;
@@ -9,6 +12,9 @@ module.exports = {
     darkMode: 'class',
     theme: {
         extend: {
+            fontFamily: {
+                sans: ['var(--font-inter)', sans],
+            },
             colors: {
                 brand: brandColor,
             },

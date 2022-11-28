@@ -19,6 +19,12 @@
         @apply dark:bg-slate-900 dark:text-slate-50;
     }
 
+    /* Temporary fix */
+    /* https://github.com/vercel/next.js/discussions/41745#discussioncomment-3998683 */
+    [data-nextjs-scroll-focus-boundary] {
+        @apply contents;
+    }
+
     [type='text'],
     [type='email'],
     [type='url'],

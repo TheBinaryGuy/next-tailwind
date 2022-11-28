@@ -3,6 +3,7 @@ module.exports = {
     // Uncomment for self-hosting via Docker
     // output: 'standalone',
     swcMinify: true,
+    reactStrictMode: true,
     images: {
         domains: [
             'dummyimage.com',
@@ -22,5 +23,4 @@ module.exports = {
             },
         ],
     },
-    reactStrictMode: true,
 };
