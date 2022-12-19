@@ -424,10 +424,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/font@npm:^13.0.5":
-  version: 13.0.5
-  resolution: "@next/font@npm:13.0.5"
-  checksum: 12304ac4a52be437f02a472a00e2183fc4dd49ca9b4583a2abde5249686c246346348d47231e74258659ccf54c8bca349811aec0d894c3e8824592316e78740c
+"@next/font@npm:^13.0.7":
+  version: 13.0.7
+  resolution: "@next/font@npm:13.0.7"
+  checksum: 88324e483561ed1372b97d434b98cff3c3adfeafc4217b45ff96f429c42ea4c6eebb089b34d8ef353aaf6413aa5f6d918a2ea83701ad129d2cc6f6751184d82a
   languageName: node
   linkType: hard
 
@@ -4147,7 +4147,7 @@ __metadata:
     "@babel/core": ^7.20.2
     "@headlessui/tailwindcss": ^0.1.1
     "@next/env": ^13.0.5
-    "@next/font": ^13.0.5
+    "@next/font": ^13.0.7
     "@tailwindcss/container-queries": ^0.1.0
     "@tailwindcss/forms": ^0.5.3
     "@tailwindcss/line-clamp": ^0.4.2

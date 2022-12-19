@@ -15,7 +15,7 @@
         "prepare": "husky install"
     },
     "dependencies": {
-        "@next/font": "^13.0.5",
+        "@next/font": "^13.0.7",
         "class-variance-authority": "^0.3.0",
         "clsx": "^1.2.1",
         "next": "13.0.5",
