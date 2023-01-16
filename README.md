@@ -1,4 +1,6 @@
-# Next.js + TypeScript + Tailwind Template ![Build Status](https://img.shields.io/github/workflow/status/TheBinaryGuy/next-tailwind/Node.js%20CI "Build Status")
+# Next.js + TypeScript + Tailwind Template
+
+[![Build Status](https://github.com/TheBinaryGuy/next-tailwind/actions/workflows/node.js.yml/badge.svg)](https://github.com/TheBinaryGuy/next-tailwind/actions/workflows/node.js.yml "Build Status")
 
 This is a Next.js + TypeScript + Tailwind template.
 
