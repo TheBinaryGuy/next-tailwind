@@ -28,7 +28,7 @@
     "devDependencies": {
         "@babel/core": "^7.20.12",
         "@headlessui/tailwindcss": "^0.1.2",
-        "@next/env": "^13.1.2",
+        "@next/env": "^13.1.6",
         "@tailwindcss/container-queries": "^0.1.0",
         "@tailwindcss/forms": "^0.5.3",
         "@tailwindcss/line-clamp": "^0.4.2",
