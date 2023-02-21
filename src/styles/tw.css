@@ -3,13 +3,18 @@
 @tailwind utilities;
 
 @layer base {
-    *::selection {
-        @apply bg-indigo-600 text-white;
+    :root {
+        --tw-ring-color: theme('colors.brand.600');
     }
 
     html {
+        font-family: theme('fontFamily.sans');
         -webkit-tap-highlight-color: transparent;
-        @apply h-full scroll-smooth antialiased [font-feature-settings:'ss01'];
+        scroll-behavior: smooth;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-feature-settings: 'ss01';
+        height: 100%;
     }
 
     body {

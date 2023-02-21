@@ -7,10 +7,9 @@ RUN apk add --no-cache libc6-compat
 WORKDIR /app
 
 # Install dependencies based on the preferred package manager
-COPY package.json yarn.lock .yarnrc.yml ./
-COPY .yarn ./.yarn
+COPY package.json pnpm-lock.yaml ./
 
-RUN yarn --frozen-lockfile
+RUN pnpm i --frozen-lockfile
 
 # Rebuild the source code only when needed
 FROM node:alpine AS builder
@@ -27,7 +26,7 @@ COPY . .
 # Uncomment the following line to disable telemetry at build time
 # ENV NEXT_TELEMETRY_DISABLED 1
 
-RUN yarn build
+RUN pnpm build
 
 # Step 2. Production image, copy all the files and run next
 FROM node:alpine AS runner

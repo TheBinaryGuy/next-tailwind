@@ -30,13 +30,3 @@ yarn-error.log*
 .env.production.local
 
 .dccache
-
-.vscode/
-
-.yarn/*
-!.yarn/cache
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
