@@ -7,7 +7,7 @@ This is a Next.js + TypeScript + Tailwind template.
 ## Usage
 
 ```bash
-yarn create next-app your-app-name -e https://github.com/TheBinaryGuy/next-tailwind
+pnpm create next-app your-app-name -e https://github.com/TheBinaryGuy/next-tailwind
 ```
 
 ## Contributing
