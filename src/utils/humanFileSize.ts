@@ -1,8 +1,8 @@
-export const humanFileSize = (
+export function humanFileSize(
     bytes: number,
     si: boolean = false,
     dp: number = 2
-) => {
+) {
     const thresh = si ? 1000 : 1024;
 
     if (Math.abs(bytes) < thresh) {
@@ -26,4 +26,4 @@ export const humanFileSize = (
     );
 
     return `${internalBytes.toFixed(dp)} ${units[u]}`;
-};
+}

@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 
-export const useTheme = () => {
+export function useTheme() {
     const [theme, setTheme] = useState<'dark' | 'light'>('dark');
 
     const setColorTheme = useCallback((newTheme: 'dark' | 'light') => {
@@ -39,4 +39,4 @@ export const useTheme = () => {
         theme,
         toggleTheme,
     };
-};
+}

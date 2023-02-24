@@ -19,12 +19,6 @@ module.exports = {
     rules: {
         '@next/next/no-html-link-for-pages': 'off',
         'react/jsx-key': 'off',
-        'react/function-component-definition': [
-            2,
-            {
-                namedComponents: 'arrow-function',
-            },
-        ],
         'react/prop-types': 'off',
         'react/require-default-props': 'off',
         'react/jsx-props-no-spreading': 'off',

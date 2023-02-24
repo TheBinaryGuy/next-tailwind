@@ -1,7 +1,7 @@
 import { Footer } from '@/app/footer';
 import { Navbar } from '@/app/navbar';
 import '@/styles/tw.css';
-import { FC, PropsWithChildren } from 'react';
+import { ReactNode } from 'react';
 
 export const metadata = {
     title: {
@@ -49,19 +49,21 @@ export const metadata = {
     },
 };
 
-const RootLayout: FC<PropsWithChildren> = ({ children }) => (
-    <html lang='en' dir='ltr'>
-        <body
-            className={`${
-                process.env.NODE_ENV === 'development' ? 'debug-screens' : ''
-            }`}>
-            <Navbar />
-            <div className='container mx-auto my-8 flex flex-1 grow flex-col px-4'>
-                {children}
-            </div>
-            <Footer />
-        </body>
-    </html>
-);
-
-export default RootLayout;
+export default function RootLayout({ children }: { children: ReactNode }) {
+    return (
+        <html lang='en' dir='ltr'>
+            <body
+                className={`${
+                    process.env.NODE_ENV === 'development'
+                        ? 'debug-screens'
+                        : ''
+                }`}>
+                <Navbar />
+                <div className='container mx-auto my-8 flex flex-1 grow flex-col px-4'>
+                    {children}
+                </div>
+                <Footer />
+            </body>
+        </html>
+    );
+}
