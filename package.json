@@ -16,10 +16,10 @@
     "dependencies": {
         "class-variance-authority": "^0.4.0",
         "clsx": "^1.2.1",
+        "lucide-react": "^0.115.0",
         "next": "^13.2.1",
         "react": "18.2.0",
         "react-dom": "18.2.0",
-        "react-feather": "^2.0.10",
         "sharp": "^0.31.3",
         "zustand": "^4.3.3"
     },
