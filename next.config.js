@@ -12,15 +12,6 @@ module.exports = {
         formats: ['image/avif', 'image/webp'],
     },
     experimental: {
-        newNextLinkBehavior: true,
         appDir: true,
-        fontLoaders: [
-            {
-                loader: 'next/font/google',
-                options: {
-                    subsets: ['latin'],
-                },
-            },
-        ],
     },
 };
