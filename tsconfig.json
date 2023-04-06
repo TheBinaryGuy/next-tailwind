@@ -2,30 +2,31 @@
     "$schema": "https://json.schemastore.org/tsconfig",
     "display": "Next.js",
     "compilerOptions": {
-        "target": "es5",
-        "lib": ["dom", "dom.iterable", "esnext"],
+        "baseUrl": ".",
         "composite": false,
         "declaration": true,
         "declarationMap": true,
-        "esModuleInterop": true,
-        "forceConsistentCasingInFileNames": true,
         "inlineSources": false,
-        "isolatedModules": true,
         "moduleResolution": "node",
         "noUnusedLocals": false,
         "noUnusedParameters": false,
         "preserveWatchOutput": true,
+        "target": "ESNext",
+        "lib": ["DOM", "DOM.Iterable", "ESNext"],
+        "allowJs": true,
         "skipLibCheck": true,
         "strict": true,
-        "allowJs": true,
+        "forceConsistentCasingInFileNames": true,
         "noEmit": true,
         "incremental": true,
+        "esModuleInterop": true,
         "module": "esnext",
         "resolveJsonModule": true,
+        "isolatedModules": true,
         "jsx": "preserve",
-        "baseUrl": ".",
         "paths": {
-            "@/*": ["src/*"]
+            "@/*": ["src/*"],
+            "@@/*": ["./*"]
         },
         "plugins": [
             {
@@ -33,12 +34,6 @@
             }
         ]
     },
-    "include": [
-        "src",
-        "next-env.d.ts",
-        "**/*.ts",
-        "**/*.tsx",
-        ".next/types/**/*.ts"
-    ],
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.mdx", ".next/types/**/*.ts"],
     "exclude": ["node_modules"]
 }

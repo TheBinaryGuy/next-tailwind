@@ -1,7 +1,6 @@
-import { Footer } from '@/app/footer';
-import { Navbar } from '@/app/navbar';
 import '@/styles/tw.css';
 import { ReactNode } from 'react';
+import { cn } from '@/utils/cn';
 
 export const metadata = {
     title: {
@@ -10,6 +9,7 @@ export const metadata = {
     },
     keywords: 'Next.js + Tailwind',
     description: 'Next.js Tailwind Template.',
+    metadataBase: new URL(`https://${process.env.NEXT_PUBLIC_DOMAIN}`),
     robots: {
         index: true,
         follow: true,
@@ -22,9 +22,7 @@ export const metadata = {
             default: 'Next.js + Tailwind',
             template: '%s',
         },
-        images: `https://${
-            process.env.NEXT_PUBLIC_DOMAIN ?? 'example.com'
-        }/icon.png`,
+        images: `https://${process.env.NEXT_PUBLIC_DOMAIN ?? 'example.com'}/icon.png`,
     },
     twitter: {
         description: 'Next.js Tailwind Template.',
@@ -53,16 +51,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     return (
         <html lang='en' dir='ltr'>
             <body
-                className={`${
-                    process.env.NODE_ENV === 'development'
-                        ? 'debug-screens'
-                        : ''
-                }`}>
-                <Navbar />
+                className={cn({
+                    'debug-screens': process.env.NODE_ENV === 'development',
+                })}>
                 <div className='container mx-auto my-8 flex flex-1 grow flex-col px-4'>
                     {children}
                 </div>
-                <Footer />
             </body>
         </html>
     );
