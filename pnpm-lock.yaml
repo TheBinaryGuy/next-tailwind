@@ -4,9 +4,6 @@ dependencies:
   clsx:
     specifier: ^1.2.1
     version: 1.2.1
-  lucide-react:
-    specifier: ^0.130.1
-    version: 0.130.1(react@18.2.0)
   next:
     specifier: 13.2.5-canary.31
     version: 13.2.5-canary.31(@babel/core@7.21.3)(react-dom@18.2.0)(react@18.2.0)
@@ -2363,14 +2360,6 @@ packages:
     dependencies:
       yallist: 4.0.0
     dev: true
-
-  /lucide-react@0.130.1(react@18.2.0):
-    resolution: {integrity: sha512-Fyyyd+ZGlZj/N8d/u9uoqFbRATI18WhynzVTjaeEqfVvsea8pYTSwBMfCg264TB2c5z9aiNAeNy67x8BiFyqXQ==}
-    peerDependencies:
-      react: ^16.5.1 || ^17.0.0 || ^18.0.0
-    dependencies:
-      react: 18.2.0
-    dev: false
 
   /mdn-data@2.0.28:
     resolution: {integrity: sha512-aylIc7Z9y4yzHYAJNuESG3hfhC+0Ibp/MAMiaOZgNv4pmEdFyfZhhhny4MNiAfWdBQ1RQ2mfDWmM1x8SvGyp8g==}
