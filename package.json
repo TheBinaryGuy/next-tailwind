@@ -11,15 +11,12 @@
         "format": "prettier --write \"**/*.{ts,tsx,md}\""
     },
     "dependencies": {
-        "class-variance-authority": "^0.5.1",
         "clsx": "^1.2.1",
         "lucide-react": "^0.130.1",
-        "next": "13.2.5-canary.30",
+        "next": "13.2.5-canary.31",
         "react": "18.2.0",
         "react-dom": "18.2.0",
-        "sharp": "^0.32.0",
-        "tailwind-merge": "^1.12.0",
-        "zustand": "^4.3.7"
+        "tailwind-merge": "^1.12.0"
     },
     "devDependencies": {
         "@ianvs/prettier-plugin-sort-imports": "^3.7.2",
@@ -35,7 +32,7 @@
         "cross-env": "^7.0.3",
         "cssnano": "^6.0.0",
         "eslint": "^8.37.0",
-        "eslint-config-next": "13.2.5-canary.30",
+        "eslint-config-next": "13.2.5-canary.31",
         "eslint-config-prettier": "^8.8.0",
         "eslint-plugin-tailwindcss": "^3.11.0",
         "eslint-plugin-unused-imports": "^2.0.0",
