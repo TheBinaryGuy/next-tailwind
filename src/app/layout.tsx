@@ -1,6 +1,20 @@
-import '@/styles/tw.css';
 import { ReactNode } from 'react';
-import { cn } from '@/utils/cn';
+import { Inter, JetBrains_Mono } from 'next/font/google';
+
+import { cn } from '@/lib/utils';
+import { Providers } from '@/components/providers';
+
+import '@/styles/globals.css';
+
+const inter = Inter({
+    variable: '--font-sans',
+    subsets: ['latin'],
+});
+
+const jb = JetBrains_Mono({
+    subsets: ['latin'],
+    variable: '--font-mono',
+});
 
 export const metadata = {
     title: {
@@ -49,14 +63,12 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
     return (
-        <html lang='en' dir='ltr'>
+        <html lang='en' dir='ltr' suppressHydrationWarning>
             <body
-                className={cn({
+                className={cn(inter.variable, jb.variable, {
                     'debug-screens': process.env.NODE_ENV === 'development',
                 })}>
-                <div className='container mx-auto my-8 flex flex-1 grow flex-col px-4'>
-                    {children}
-                </div>
+                <Providers>{children}</Providers>
             </body>
         </html>
     );

@@ -1,6 +1,6 @@
 # Next.js + Tailwind Template
 
-[![Build Status](https://github.com/TheBinaryGuy/next-tailwind/actions/workflows/node.js.yml/badge.svg)](https://github.com/TheBinaryGuy/next-tailwind/actions/workflows/node.js.yml "Build Status")
+[![Build Status](https://github.com/TheBinaryGuy/next-tailwind/actions/workflows/node.js.yml/badge.svg)](https://github.com/TheBinaryGuy/next-tailwind/actions/workflows/node.js.yml 'Build Status')
 
 This is a Next.js + Tailwind template.
 
