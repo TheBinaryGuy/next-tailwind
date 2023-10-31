@@ -5,13 +5,14 @@ module.exports = {
     swcMinify: true,
     reactStrictMode: true,
     images: {
-        domains: [
-            'dummyimage.com',
-            process.env.NEXT_PUBLIC_DOMAIN ?? 'example.com',
+        remotePatterns: [
+            {
+                hostname: process.env.NEXT_PUBLIC_DOMAIN ?? 'example.com',
+            },
+            {
+                hostname: 'dummyimage.com',
+            },
         ],
         formats: ['image/avif', 'image/webp'],
-    },
-    experimental: {
-        appDir: true,
     },
 };

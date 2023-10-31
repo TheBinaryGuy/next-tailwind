@@ -6,6 +6,8 @@ import { Providers } from '@/components/providers';
 
 import '@/styles/globals.css';
 
+import { Viewport } from 'next';
+
 const inter = Inter({
     variable: '--font-sans',
     subsets: ['latin'],
@@ -15,6 +17,10 @@ const jb = JetBrains_Mono({
     subsets: ['latin'],
     variable: '--font-mono',
 });
+
+export const viewport: Viewport = {
+    themeColor: '#4f46e5',
+};
 
 export const metadata = {
     title: {
@@ -28,7 +34,6 @@ export const metadata = {
         index: true,
         follow: true,
     },
-    themeColor: '#4f46e5',
     openGraph: {
         description: 'Next.js Tailwind Template.',
         type: 'website',
