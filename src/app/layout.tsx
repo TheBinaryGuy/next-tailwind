@@ -2,6 +2,7 @@ import { ReactNode } from 'react';
 import { Inter, JetBrains_Mono } from 'next/font/google';
 
 import { cn } from '@/lib/utils';
+
 import { Providers } from '@/components/providers';
 
 import '@/styles/globals.css';
@@ -20,6 +21,11 @@ const jb = JetBrains_Mono({
 
 export const viewport: Viewport = {
     themeColor: '#4f46e5',
+    initialScale: 1.0,
+    maximumScale: 1.0,
+    minimumScale: 1.0,
+    userScalable: false,
+    width: 'device-width',
 };
 
 export const metadata = {

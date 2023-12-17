@@ -19,6 +19,7 @@ module.exports = {
         '^types$',
         '^@/app/(.*)$',
         '^@/lib/(.*)$',
+        '',
         '^@/components/(.*)$',
         '^@/styles/(.*)$',
         '^[./]',

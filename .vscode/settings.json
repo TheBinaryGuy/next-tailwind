@@ -2,7 +2,7 @@
     "typescript.enablePromptUseWorkspaceTsdk": true,
     "typescript.tsdk": "node_modules/typescript/lib",
     "editor.codeActionsOnSave": {
-        "source.organizeImports": false,
-        "source.sortImports": false
+        "source.organizeImports": "never",
+        "source.sortImports": "never"
     }
 }
